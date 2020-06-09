@@ -1,0 +1,35 @@
+//COLOR
+$color-primary: #512DA8;
+$color-accent: #53CDFE;
+$color-background: #F6F6F6;
+$color-foreground: #FFFFFF;
+
+//FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+
+
+//BREAKPOINTS
+$bp-largest: 75em; //1200px
+$bp-large: 68.75em; //1100px
+$bp-medium: 56.25em; //900px
+$bp-small: 37.5em; //600px
+$bp-smallest: 31.25em;
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+  @media only screen and (max-width:$bp-large){
+    font-size: 50%;
+  }
+}
+body{
+  font-family: $font-primary;
+  background-color: $color-background;
+}
